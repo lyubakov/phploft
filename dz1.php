@@ -76,4 +76,17 @@
 	echo "<br>";
 
 	echo "<h3>Task 8:</h3>";
+	$str = "Glory glory Man United";
+	echo "<br>";
+	echo $str;
+	echo "<br>"; 
+	$oops = explode(" ", $str);
+	$strNum = count($str);
+	$reversedNum = 0;
+	do {
+		$reversed = array_reverse($oops);
+		$reversedNum = count($reversed);
+		$newStr = implode ( ", ", $reversed);
+	} while ($reversedNum > 10);
+	echo $newStr;
  ?>
