@@ -18,9 +18,9 @@ echo "Решение: <br>";
 echo "Необходимо вычесть из общего числа рисунки фломастерами и карандашами. Правильный ответ: $all - $flo - $pencil = $answer <br><br>";
 
 echo "<h3>Task 3:</h3>";
-define("myconst", 48);//не по psr-2 константа не в своем регистре
-define('myconst', 55);
-if (defined("myconst") == true) echo "Константа введена, ее значение " . myconst . "<br><br>";//не по psr-2
+define("myConst", 48);//не по psr-2 константа не в своем регистре
+//define('myConst', 55);
+if (defined("myConst") == true) echo "Константа введена, ее значение " . myConst . "<br><br>";//не по psr-2
 
 echo "<h3>Task 4:</h3>";
 $age = 0;
@@ -65,8 +65,7 @@ foreach ($cars as $car) {
 echo "<br><br>";
 //весь блок не по psr-2
 	echo "<h3>Task 7:</h3>";
-
-	for ($i=1; $i <= 10; $i++) { 
+	for ($i=1; $i <= 10; $i++) {
 		for ($j = 1; $j <=10; $j++) {
 	        if ($i % 2 === 0 && $j % 2 === 0) {
 	            echo "$i x $j = " . "(" . $j * $i . ")" . "<br>";
@@ -91,8 +90,9 @@ echo "<br><br>";
 	$reversedNum = 0;
 	do {
 		$reversed    = array_reverse($oops);
+        print_r($reversed);
+        echo "<br>";
 		$reversedNum = count($reversed);
 		$newStr      = implode ( ", ", $reversed);
 	} while ($reversedNum > 10);
 	echo $newStr;
- ?>
