@@ -89,10 +89,10 @@ echo "<br><br>";
 	$strNum      = count($str);
 	$reversedNum = 0;
 	do {
-		$reversed    = array_reverse($oops);
+        $reversed    = array_reverse($oops);
         print_r($reversed);
         echo "<br>";
-		$reversedNum = count($reversed);
-		$newStr      = implode ( ", ", $reversed);
+        $reversedNum = count($reversed);
+        $newStr      = implode ( ", ", $reversed);
 	} while ($reversedNum > 10);
 	echo $newStr;
