@@ -18,9 +18,9 @@ echo "Решение: <br>";
 echo "Необходимо вычесть из общего числа рисунки фломастерами и карандашами. Правильный ответ: $all - $flo - $pencil = $answer <br><br>";
 
 echo "<h3>Task 3:</h3>";
-define("myConst", 48);//не по psr-2 константа не в своем регистре
-//define('myConst', 55);
-if (defined("myConst") == true) echo "Константа введена, ее значение " . myConst . "<br><br>";//не по psr-2
+define("MYCONST", 48);//не по psr-2 константа не в своем регистре
+//define('MYCONST', 55);
+if (defined("MYCONST") == true) echo "Константа введена, ее значение " . MYCONST . "<br><br>";//не по psr-2
 
 echo "<h3>Task 4:</h3>";
 $age = 0;
