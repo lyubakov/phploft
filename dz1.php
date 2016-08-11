@@ -80,19 +80,19 @@ echo "<br><br>";
 	echo "<br>";
 //не по psr-2
 //невывел массив
-	echo "<h3>Task 8:</h3>";
-	$str = "Glory glory Man United";
-	echo "<br>";
-	echo $str;
-	echo "<br>"; 
-	$oops   	 = explode(" ", $str);
-	$strNum      = count($str);
-	$reversedNum = 0;
-	do {
-        $reversed    = array_reverse($oops);
-        print_r($reversed);
-        echo "<br>";
-        $reversedNum = count($reversed);
-        $newStr      = implode ( ", ", $reversed);
-	} while ($reversedNum > 10);
-	echo $newStr;
+    echo "<h3>Task 8:</h3>";
+    $str = "Glory glory Man United";
+    echo "<br>";
+    echo $str;
+    echo "<br>";
+    $oops   	 = explode(" ", $str);
+    $strNum      = count($str);
+    $reversedNum = 0;
+    do {
+    $reversed    = array_reverse($oops);
+    print_r($reversed);
+    echo "<br>";
+    $reversedNum = count($reversed);
+    $newStr      = implode ( ", ", $reversed);
+    } while ($reversedNum > 10);
+    echo $newStr;
