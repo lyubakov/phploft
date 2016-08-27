@@ -1,6 +1,7 @@
- <?php
+<?php
 
     echo "Задание №1 <br>";
+//весб блок не по зык-2
     function addStrings($paragraph, $what){
         if ($what == true){
             $oneString = implode(", ", $paragraph);
@@ -12,10 +13,12 @@
         }
      }
     $testpara = ['a','v','s','d'];
-     echo addStrings($testpara, 1);
+     echo addStrings($testpara,  1);
+//  echo addStrings($testpara,  'true'); так работает а не должен
     echo "<br><br>";
 
     echo "Задание №2 <br>";
+    // блок не по psr-2
      function mathKing($array, $argument){
          foreach ($array as $value){
              if (!is_numeric($value)) {
@@ -51,7 +54,9 @@
          }
      }
      $someArray = [1, 2, 4, 5, 18];
-     mathKing($someArray, '22');
+     mathKing($someArray, '*');
+//     mathKing($someArray, '-'); //1-2-4-5-18 = 28 у тебя 30
+//     mathKing($someArray, true);//так не должно работать
     echo "<br><br>";
     echo "Задание №3 <br>";
 
@@ -71,7 +76,7 @@
                      $done -= $value;
                  }
                  echo $done;
-                 break;
+                 break;//здесь таже ошибка что и сверху
              case '*':
                  $done = 1;
                  foreach ($numbers as $value) {
@@ -94,6 +99,7 @@
 
     echo "<br><br>";
     echo "Задание №4 <br>";
+//блок не по psr-2
     function twotwo($number1, $number2) {
         if (!is_int($number1) || !is_int($number2)) {
             return "Ошибка! Введено не целое число.";
@@ -109,6 +115,7 @@
 
     echo "<br><br>";
     echo "Задание №5 <br>";
+//блок не по psr-2
     function isPallindrom($fullString) {
         $myString = str_replace(" ","",$fullString);
         $regStr = mb_strtolower($myString);
@@ -120,7 +127,9 @@
             echo "Паллиндрома нет :(";
         }
     }
-    isPallindrom('Аргентина манит негра');
+//    isPallindrom('Аргентина манит негра');//пишет Паллиндрома нет
+    isPallindrom('И к вам и трем с смерти мавки');//пишет Паллиндрома нет
+//посмотри что у тебя возвращают переменные
 
     echo "<br><br>";
     echo "Задание №6 <br>";
@@ -138,8 +147,9 @@
     echo str_replace("Две", "Три", $yoString);
     echo "<br><br>";
 
-    echo "Задание №8 <br>";
-    $myPockets = "RX packets:0 errors:0 dropped:0 overruns:0 frame:0.:)";
+    echo 'Задание №8 <br>';
+//смайл не должен выводиться если пакетов меньше 1000
+    $myPockets = 'RX packets:0 errors:0 dropped:0 overruns:0 frame:0.:)';
     function pockets($pocketsInfo){
         preg_match("/\:\)/", $pocketsInfo, $ohNo);
         if ($ohNo) {
@@ -147,9 +157,9 @@
         } else {
             preg_match("/^RX packets:(\d+)/", $pocketsInfo, $myArr);
             if ($myArr[1]>1){
-                echo "Пакетики";
+                echo 'Пакетики';
             } else {
-                echo "Ничегошеньки";
+                echo 'Ничегошеньки';
             }
         }
     }
@@ -170,9 +180,9 @@
     echo "Задание №10 <br>";
     $theText = "Hello Again!";
     function newFile($text){
-        $creator = fopen("anotherfile.txt", "w+");
+        $creator = fopen('anotherfile.txt', '+');
         fwrite($creator, $text);
-        getTexts("./anotherfile.txt");
+        getTexts('./anotherfile.txt');
     }
     newFile($theText);
     echo "<br><br>";
