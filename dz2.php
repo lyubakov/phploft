@@ -3,7 +3,7 @@
     echo "Задание №1 <br>";
 //весб блок не по зык-2
     function addStrings($paragraph, $what){
-        if ($what == true){
+        if ($what === true){
             $oneString = implode(", ", $paragraph);
             return $oneString;
         } else {
@@ -29,7 +29,7 @@
                  echo array_sum($array);
                  break;
              case '-':
-                 $done = 0;
+                 $done = $array[0];
                  foreach ($array as $value) {
                      $done -= $value;
                  }
@@ -71,7 +71,7 @@
                  echo array_sum($numbers);
                  break;
              case '-':
-                 $done = 0;
+                 $done = $array[0];
                  foreach ($numbers as $value) {
                      $done -= $value;
                  }
@@ -149,18 +149,16 @@
 
     echo 'Задание №8 <br>';
 //смайл не должен выводиться если пакетов меньше 1000
-    $myPockets = 'RX packets:0 errors:0 dropped:0 overruns:0 frame:0.:)';
+    $myPockets = 'RX packets:10 errors:0 dropped:0 overruns:0 frame:0.:)';
     function pockets($pocketsInfo){
+        preg_match("/^RX packets:(\d+)/", $pocketsInfo, $myArr);
         preg_match("/\:\)/", $pocketsInfo, $ohNo);
-        if ($ohNo) {
+        if ($myArr[1]>1000 && $ohNo){
             smile();
+        } elseif ($myArr[1]>1){
+            echo 'Пакетики';
         } else {
-            preg_match("/^RX packets:(\d+)/", $pocketsInfo, $myArr);
-            if ($myArr[1]>1){
-                echo 'Пакетики';
-            } else {
-                echo 'Ничегошеньки';
-            }
+            echo 'Ничегошеньки';
         }
     }
     function smile() {
