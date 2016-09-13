@@ -76,7 +76,7 @@ function calcEverything($argument, ...$numbers)
             echo array_sum($numbers);
             break;
         case '-':
-            $done = $array[0];
+            $done = $numbers[0];
             foreach ($numbers as $value) {
                 $done -= $value;
             }

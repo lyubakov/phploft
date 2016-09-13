@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9667fc8f-f070-437a-bff7-a8326328fec0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz2.php" afterPath="$PROJECT_DIR$/dz2.php" />
     </list>
     <ignored path="phploft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dz2.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dz2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4608">
-              <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+            <state relative-caret-position="137">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dz3.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dz3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dz3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+            <state relative-caret-position="430">
+              <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -88,8 +89,8 @@
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/data.xml" />
-        <option value="$PROJECT_DIR$/dz2.php" />
         <option value="$PROJECT_DIR$/dz3.php" />
+        <option value="$PROJECT_DIR$/dz2.php" />
       </list>
     </option>
   </component>
@@ -261,7 +262,7 @@
       <workItem from="1473232682307" duration="3118000" />
       <workItem from="1473242332411" duration="3980000" />
       <workItem from="1473264733708" duration="5754000" />
-      <workItem from="1473771768303" duration="13000" />
+      <workItem from="1473771768303" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="fixed stuff">
       <created>1470831748726</created>
@@ -326,11 +327,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473328270914</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hw3 done">
+      <created>1473771797548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1473771797548</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49439000" />
+    <option name="totallyTimeSpent" value="49537000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,14 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4608">
-          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dz1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2352">
@@ -687,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+        <state relative-caret-position="430">
+          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -705,6 +705,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="80" selection-start-line="0" selection-start-column="80" selection-end-line="0" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dz2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
           <folding />
         </state>
       </provider>
