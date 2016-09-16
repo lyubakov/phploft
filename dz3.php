@@ -22,9 +22,9 @@ foreach ($xml->Items->Item as $item) {
 }
 
 echo "Task 2 <br><br>";
-$myArray = ['home' => ['1'=>'flat', '2'=>'condo', '3'=>'loft'], 'street' => '5th', 'country' => 'USA'];
+$myArray   = ['home' => ['1'=>'flat', '2'=>'condo', '3'=>'loft'], 'street' => '5th', 'country' => 'USA'];
 $jsonArray = json_encode($myArray);
-$file = fopen('output.json', 'w');
+$file      = fopen('output.json', 'w');
 fwrite($file, $jsonArray);
 fclose($file);
 function changeFile($fileName)
@@ -32,13 +32,15 @@ function changeFile($fileName)
     $changer = rand(0, 1);
     if ($changer === 1) {
         $readJson = file_get_contents($fileName);
-        $newObj = json_decode($readJson);
+        $newObj   = json_decode($readJson);
         $newArray = (array) $newObj;
-        $newArray['home'] = (array) $newArray['home'];
-        $newArray['street'] = '3rd';
+
+        $newArray['home']    = (array) $newArray['home'];
+        $newArray['street']  = '3rd';
         $newArray['country'] = 'UK';
+
         $jsonArray = json_encode($newArray);
-        $file = fopen('output2.json', 'w');
+        $file      = fopen('output2.json', 'w');
         fwrite($file, $jsonArray);
         fclose($file);
         echo "Создал новый файл";
@@ -52,7 +54,7 @@ changeFile('output.json');
 function compare($array1, $fileName)
 {
     $readJson = file_get_contents($fileName);
-    $newObj = json_decode($readJson);
+    $newObj   = json_decode($readJson);
     $newArray = (array) $newObj;
     $newArray['home'] = (array) $newArray['home'];
     $compare1 = array_diff($array1, $newArray);
@@ -63,6 +65,7 @@ function compare($array1, $fileName)
 }
 compare($myArray, 'output2.json');
 echo "<br><br>";
+
 echo "Task 3 <br><br>";
 function csvArray()
 {
@@ -91,11 +94,14 @@ readCSV('file.csv');
 echo "<br><br>";
 echo "Task 4 <br><br>";
 $ch = curl_init();
+//здесь надо разделить строку конкатенацией она длинная
 curl_setopt($ch, CURLOPT_URL, "https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec($ch);
 curl_close($ch);
 $objData = json_decode($data, true);
 //var_dump($objData);
+//можно так же получить через обьект и написать рекурсивную функцию которая
+// будет проходит по массиву и возвращать значения
 echo "page id = {$objData['query']['pages']['15580374']['pageid']} <br>";
 echo "title = {$objData['query']['pages']['15580374']['title']}";
